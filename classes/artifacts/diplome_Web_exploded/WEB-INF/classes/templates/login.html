@@ -1,0 +1,45 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<div th:replace="fragments/head :: head"></div>
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="text-center text-danger">
+    <th:block>
+        <h3 th:if="${param.error}">Login or password is incorrect!</h3>
+    </th:block>
+</div>
+
+<form th:action="@{/login}" method="post" class="form-signin mt-5 border-dark rounded" id="loginForm" name="loginForm">
+    <div class="text-center">
+        <div class="mb-4" style="font-size: 100px;">
+            <i class="fa fa-tint" aria-hidden="true"></i>
+        </div>
+    </div>
+    <h1 class="h3 mb-3 font-weight-normal text-center">Login</h1>
+    <input type="text" id="inputLogin" name="login" class="form-control" placeholder=Login required autofocus>
+    <input type="password" id="inputPassword" name="pass" class="form-control" placeholder=Password required>
+    <div class="checkbox mb-3">
+        <div class="text-center">
+            <a href="#passModal" data-toggle="modal" style="color: #6c757d ">Forgot password?</a>
+        </div>
+    </div>
+
+    <button class="btn btn-lg btn-dark btn-block" type="submit">Login</button>
+    <a href="/register">
+        <button class="regButton text-center btn btn-lg btn-dark btn-block mt-2" type="button">Register</button>
+    </a>
+</form>
+
+<div th:replace="fragments/footer :: footer"></div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

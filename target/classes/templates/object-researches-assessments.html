@@ -1,0 +1,156 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<div th:replace="fragments/head :: head"></div>
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="row justify-content-center w-100">
+
+    <h3 class="mt-3 mb-3 font-weight-normal text-center">Researches of [[${object.name}]]</h3>
+
+    <a th:href="@{/obj-assessment/__${object.id}__}">
+        <button type="button" class="btn btn-warning mt-3 ml-2">Assess now</button>
+    </a>
+
+</div>
+
+
+<div class="container">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+               aria-selected="true">Researches</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+               aria-selected="false">Assessments</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content w-100">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+            <table class="my-table table table-hover text-center align-content-center">
+                <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>pH</th>
+                    <th>Hum</th>
+                    <th>Trophy</th>
+                    <th>Oxygen</th>
+                    <th>
+                        <a th:href="@{/researches/add/__${object.id}__}">
+                            <button class="btn btn-outline-success">Add</button>
+                        </a>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="research : ${researches}" class="align-middle align-content-center">
+                    <td>[[${research.id}]]</td>
+                    <td>[[${research.name}]]</td>
+                    <td>[[${research.dateTime}]]</td>
+                    <td>[[${research.ph}]]</td>
+                    <td>[[${research.hum}]]</td>
+                    <td>[[${research.trophy}]]</td>
+                    <td>[[${research.oxygen}]]</td>
+                    <td>
+                        <a href="/researches/edit">
+                            <button class="btn btn-outline-success mb-1">Edit</button>
+                        </a>
+                        <button type="button" data-toggle="modal" th:attr="data-target='#researchDeleteModal-'+ ${research.id}"
+                                class="btn btn-outline-danger">
+                            Delete
+                        </button>
+
+                        <div class="modal fade" th:id="'researchDeleteModal-' + ${research.id}" tabindex="-1" role="dialog"
+                             aria-labelledby="researchModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <form th:action="@{/researches/delete}" method="post">
+
+                                    <input type="hidden" name="objectId" th:value="${object.id}">
+                                    <input type="hidden" name="researchId" th:value="${research.id}">
+
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="researchModalLabel">Delete</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Delete this research name:"[[${research.name}]]"?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel
+                                            </button>
+                                            <input type="submit" class="btn btn-danger" value="Delete">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+            <table class="my-table table table-hover text-center align-content-center">
+                <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>pH</th>
+                    <th>Hum</th>
+                    <th>Trophy</th>
+                    <th>Oxygen</th>
+                    <th>Result</th>
+                    <th>Notes</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="assessment : ${assessments}" class="align-middle">
+                    <td>[[${assessment.id}]]</td>
+                    <td>[[${assessment.name}]]</td>
+                    <td>[[${assessment.dateTime}]]</td>
+                    <td>[[${assessment.ph}]]</td>
+                    <td>[[${assessment.hum}]]</td>
+                    <td>[[${assessment.trophy}]]</td>
+                    <td>[[${assessment.oxygen}]]</td>
+                    <td>[[${assessment.assessmentResult}]]</td>
+                    <td>[[${assessment.notes}]]</td>
+                    <td>
+                        <a th:href="@{/assessment/details/__${assessment.id}__}">
+                            <button class="btn btn-outline-success mb-1 text-nowrap">Show more</button>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+
+</body>
+</html>

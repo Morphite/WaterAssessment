@@ -1,0 +1,109 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head th:fragment="head">
+
+    <title>BookMate</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+    <script th:inline="javascript">
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2",
+                exportEnabled: true,
+                title: {
+                    text: "Assessment chart"
+                },
+                axisX: {
+                    valueFormatString: "DD MMM"
+                },
+                axisY: {
+                    title: "Assessment result",
+                    gridThickness: 0,
+                    includeZero: false
+                },
+                legend: {
+                    cursor: "pointer",
+                    fontSize: 16,
+                    itemclick: toggleDataSeries
+                },
+                data: []
+            });
+
+            var dataSeries = [[${dataSeries}]];
+            var names = [[${names}]];
+
+            dataSeries.forEach(function(item, i) {
+                addNewSeries(names[i], item);
+            });
+
+            console.log(chart.options.data);
+
+            chart.render();
+
+            function addNewSeries(name, dataPoints) {
+                var newSeries = {
+                    name: name,
+                    showInLegend: true,
+                    type: "spline",
+                    xValueType: "dateTime",
+                    xValueFormatString: "DD MMM",
+                    yValueFormatString: "##.000",
+                    dataPoints: dataPoints
+                };
+
+                chart.options.data.push(newSeries);
+            }
+
+            function toggleDataSeries(e) {
+                if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                    e.dataSeries.visible = false;
+                } else {
+                    e.dataSeries.visible = true;
+                }
+                chart.render();
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="container">
+    <h3 class="my-4 text-center">Charts</h3>
+
+    <div id="chartContainer" style="height: 570px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

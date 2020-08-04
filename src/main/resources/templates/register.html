@@ -1,0 +1,45 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<div th:replace="fragments/head :: head"></div>
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<form th:action="@{/register}" method="post" class="form-signin mt-5 border-dark rounded" id="loginForm" name="loginForm">
+    <div class="text-center">
+        <div class="mb-4" style="font-size: 100px;">
+            <i class="fa fa-tint" aria-hidden="true"></i>
+        </div>
+    </div>
+    <h1 class="h3 mb-3 font-weight-normal text-center">Registration</h1>
+    <h3 th:if="${error}" style="color: red">
+        [[${error}]]
+    </h3>
+    <input type="text" id="inputLogin" name="login" pattern="([A-ZА-Яa-zа-я0-9_-]){3,16}" class="form-control" placeholder=Login required autofocus>
+    <small id="logHelp" class="form-text text-muted my-1">
+        Min 3 chars. Max - 16. RU, EN letters, 0-9 and _, -.
+    </small>
+    <input type="password" id="inputPassword" name="pass" pattern="([A-ZА-Яa-zа-я0-9_-]){8,20}" class="form-control" placeholder=Password required>
+    <small id="passHelp" class="form-text text-muted my-1">
+        Min 8 chars. Max - 20. RU, EN letters, 0-9 and _, -.
+    </small>
+
+    <div class="row my-2 justify-content-center">
+        <input type="text" id="inputName" name="name" class="form-control col mr-1" placeholder=Name required autofocus>
+        <input type="text" id="inputSurname" name="surname" class="form-control col" placeholder=Surname required autofocus>
+    </div>
+
+    <button class="btn btn-lg btn-dark btn-block" type="submit">Register</button>
+</form>
+
+<div th:replace="fragments/footer :: footer"></div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
