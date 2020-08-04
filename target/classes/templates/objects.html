@@ -1,0 +1,42 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<div th:replace="fragments/head :: head"></div>
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="d-flex justify-content-center flex-wrap">
+
+    <th:block th:each="object : ${objects}">
+        <form action="/objects" method="post">
+            <div class="card mx-1 my-2" style="width: 18rem;">
+                <img src="images/lake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        [[${object.name}]]
+                    </h5>
+                    <small class="card-text font-weight-bold">Location:
+                        [[${object.location}]]
+                    </small>
+                    <h6 class="card-text mt-2">
+                        [[${object.date}]]
+                    </h6>
+
+                    <a th:href="@{/objects/__${object.id}__}" class="btn btn-warning">Inspect</a>
+
+                </div>
+            </div>
+        </form>
+    </th:block>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

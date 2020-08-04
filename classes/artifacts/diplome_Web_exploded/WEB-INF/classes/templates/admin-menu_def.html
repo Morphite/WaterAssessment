@@ -1,0 +1,27 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<div th:replace="fragments/head :: head"></div>
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<h3 class="mt-3 font-weight-normal text-center">Admin Panel</h3>
+
+<div class="container d-flex flex-column flex-md-row justify-content-around" style="color: #5a6268">
+
+
+    <a class="py-2 d-none d-md-inline-block" href="/admin-users">
+        <button class=" btn btn-dark btn-lg">Users</button>
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="/admin-assessments">
+        <button class=" btn btn-dark btn-lg">Assessments</button>
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="/admin-objects">
+        <button class=" btn btn-dark btn-lg">Objects</button>
+    </a>
+
+</div>
+
+</body>
+</html>

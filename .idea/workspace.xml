@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="faf0ffd7-9785-431b-84ff-61aea1e036e5" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YtVTQySRQ89rfUGyFWLlpJbwqD" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.leonov.diplome.service" />
+      <recent name="com.leonov.diplome.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\resources\templates" />
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\resources\static\js" />
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\resources" />
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\resources\templates\fragments" />
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\webapp\WEB-INF\view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leonov.diplome.repository" />
+      <recent name="com.leonov.diplome.service" />
+      <recent name="com.leonov.diplome.model" />
+      <recent name="com.leonov.diplome.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\resources\static\images" />
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\resources\templates" />
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\resources\templates\fragments" />
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main\web\WEB-INF\jsp" />
+      <recent name="D:\Загрузки\Документы\Диплом\1_Proj\diplome\src\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DiplomeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="diplome" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leonov.diplome.DiplomeApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Никита\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="faf0ffd7-9785-431b-84ff-61aea1e036e5" name="Default Changelist" comment="" />
+      <created>1583761884133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583761884133</updated>
+      <workItem from="1583761886393" duration="12337000" />
+      <workItem from="1583865087656" duration="1585000" />
+      <workItem from="1583946887276" duration="202000" />
+      <workItem from="1584049352414" duration="1372000" />
+      <workItem from="1584144796833" duration="825000" />
+      <workItem from="1584915631913" duration="6120000" />
+      <workItem from="1584976556295" duration="2860000" />
+      <workItem from="1584979436235" duration="5446000" />
+      <workItem from="1584997872872" duration="209000" />
+      <workItem from="1585002946826" duration="4729000" />
+      <workItem from="1585090223628" duration="2231000" />
+      <workItem from="1585147728864" duration="3791000" />
+      <workItem from="1585174090398" duration="42000" />
+      <workItem from="1585174152337" duration="3572000" />
+      <workItem from="1585261907807" duration="2467000" />
+      <workItem from="1585516552723" duration="4092000" />
+      <workItem from="1585574897993" duration="20684000" />
+      <workItem from="1585663137369" duration="6175000" />
+      <workItem from="1585691119416" duration="4260000" />
+      <workItem from="1586790441271" duration="4739000" />
+      <workItem from="1587057914624" duration="6336000" />
+      <workItem from="1587383074065" duration="7416000" />
+      <workItem from="1587500773396" duration="599000" />
+      <workItem from="1587565296124" duration="9629000" />
+      <workItem from="1587592425710" duration="2071000" />
+      <workItem from="1587648250423" duration="1818000" />
+      <workItem from="1587744694320" duration="1532000" />
+      <workItem from="1587926856013" duration="6937000" />
+      <workItem from="1587995944234" duration="10388000" />
+      <workItem from="1588088786935" duration="9653000" />
+      <workItem from="1588163874217" duration="12828000" />
+      <workItem from="1588279584474" duration="319000" />
+      <workItem from="1588434583165" duration="9173000" />
+      <workItem from="1588528797528" duration="7092000" />
+      <workItem from="1588599579330" duration="10577000" />
+      <workItem from="1588702054636" duration="6221000" />
+      <workItem from="1588769811810" duration="7797000" />
+      <workItem from="1588955782127" duration="7787000" />
+      <workItem from="1589026611136" duration="12727000" />
+      <workItem from="1589113382345" duration="12514000" />
+      <workItem from="1589200337039" duration="9591000" />
+      <workItem from="1588877482552" duration="2167000" />
+      <workItem from="1589290681381" duration="12524000" />
+      <workItem from="1589371576722" duration="1764000" />
+      <workItem from="1589463055355" duration="8726000" />
+      <workItem from="1589667141664" duration="829000" />
+      <workItem from="1590620841849" duration="4058000" />
+      <workItem from="1590684264573" duration="8361000" />
+      <workItem from="1590705799908" duration="6022000" />
+      <workItem from="1590795052013" duration="5524000" />
+      <workItem from="1590845196026" duration="2122000" />
+      <workItem from="1594221152133" duration="780000" />
+      <workItem from="1594652356243" duration="699000" />
+      <workItem from="1596148999797" duration="141000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leonov/diplome/controller/AssessmentController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leonov/diplome/service/impl/UserServiceImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leonov/diplome/controller/RegisterController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leonov/diplome/assessment/AssessmentModule.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

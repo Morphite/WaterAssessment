@@ -1,0 +1,67 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<div th:replace="fragments/head :: head"></div>
+
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<h3 class="my-4 text-center">Result</h3>
+
+<div class="d-flex justify-content-center">
+    <div class="d-flex flex-row justify-content-start">
+        <div class="flex-column">
+            <p>Result for your assessment: <h3 th:attr="class=${colorClass}">[[${assessment.assessmentResult}]]</h3> </p>
+
+            <p>Ph class: [[${assessment.phClass}]] - [[${phClassMsg}]]</p>
+            <p>Hum class: [[${assessment.humClass}]] - [[${humClassMsg}]]</p>
+            <p>Trophy class: [[${assessment.trophyClass}]] - [[${trophyClassMsg}]]</p>
+            <p>Oxygen class: [[${assessment.oxygenClass}]] - [[${oxygenClassMsg}]]</p>
+
+            <button type="button" class="btn btn-outline-dark form-button" onclick="history.back()">Go back</button>
+        </div>
+
+        <div class="flex-column mx-5">
+            <table class="table table-dark">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th colspan="2" class="text-center">Q-class</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="bg-danger">
+                    <th><2.6</th>
+                    <td colspan="2" class="text-center">Low</td>
+                    <td></td>
+                </tr>
+                <tr class="bg-warning">
+                    <th>2.6-3.6</th>
+                    <td colspan="2" class="text-center">Satisfactory</td>
+                    <td></td>
+                </tr>
+                <tr class="bg-info">
+                    <th>3.6-4.6</th>
+                    <td colspan="2" class="text-center">Good</td>
+                    <td></td>
+                </tr>
+                <tr class="bg-success">
+                    <th>>4.6</th>
+                    <td colspan="2" class="text-center">High</td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
